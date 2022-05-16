@@ -4,6 +4,15 @@ body {
 
 .title {
     color: purple;
+    text-align: center;
+}
+
+.title_span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 10vh;
 }
 
 .gameboard {
