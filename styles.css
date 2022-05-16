@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+
+.title {
+    color: purple;
+}
+
+.gameboard {
+    width: 100%;
+    height: 97vh;
+    border: .1vh;
+    border-color: red;
+    border-style: solid;
+    color: blue;
+}
+
+.gameboard_title_row {
+    height: 10%;
+    border: .1vh;
+    border-color: red;
+    border-style: solid;
+    color: blue;
+}
+
+.gameboard_row {
+    height: 12%;
+    border: .1vh;
+    border-color: red;
+    border-style: solid;
+    color: blue;
+}
+
+.gameboard_piece {
+    width: 20%;
+    border: .1vh;
+    border-color: red;
+    border-style: solid;
+    font-size: 8vh;
+    color: blue;
+}
+
+.gameboard_piece_sad {
+    width: 20%;
+    color: purple;
+    font-size: 8vh;
+}
+
+.gameboard_piece_cat {
+    width: 20%;
+    border: .1vh;
+    border-color: red;
+    border-style: solid;
+    color: red;
+    font-size: 8vh;
+}
