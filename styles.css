@@ -1,6 +1,7 @@
 body {
     background-color: black;
     position: absolute;
+    overflow: hidden;
 }
 
 .title {
