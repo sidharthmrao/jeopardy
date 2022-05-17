@@ -100,13 +100,13 @@ body {
 }
 
 .gameboard_piece_mini {
-    width: 10%;
+    width: 0%;
     color: purple;
     font-size: 8vh;
 }
 
 .gameboard_piece_large {
-    width: 60%;
+    width: 100%;
     color: purple;
     font-size: 8vh;
 }
