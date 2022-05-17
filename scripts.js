@@ -41,6 +41,7 @@ function popup(which) {
     },1000);
     console.log(which);
     document.getElementById("popup").style.display = "flex";
+    document.getElementById("popup2").style.display = "flex";
     document.getElementById("question-category").innerHTML = which;
     katex.render(`\\text{${questions[which][0]}}`, document.getElementById("question"));
     katex.render(questions[which][1], document.getElementById("question-rendered"));
@@ -51,5 +52,11 @@ function REVEAL() {
 }
 
 function popdown() {
-    document.getElementById("popup").style.display = "none";
+    setTimeout(function() {
+        document.getElementById("popup2").style.display = "none";
+    }, 460);
+    setTimeout(function() {
+        document.getElementById("popup").style.display = "none";
+    }, 480);
+    
 }
