@@ -75,7 +75,15 @@ body {
 }
 
 .question_question_row {
-    height: 60%;
+    height: 40%;
+    border: .1vh;
+    border-color: red;
+    border-style: solid;
+    color: blue;
+}
+
+.question_rendered_row {
+    height: 20%;
     border: .1vh;
     border-color: red;
     border-style: solid;
