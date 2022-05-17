@@ -5,62 +5,88 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="scripts.js"></script>
         <title>Jeopardy</title>
     </head>
     <body>
-        <table class="gameboard">
-            <tr class="gameboard_title_row">
-                <th class="gameboard_piece_sad"></th>
-                <th class="gameboard_piece_sad"></th>
-                <th class="gameboard_piece_sad">JEOPARDY</th>
-                <th class="gameboard_piece_sad"></th>
-                <th class="gameboard_piece_sad"></th>
-            </tr>
-            <tr class="gameboard_title_row">
-                <th class="gameboard_piece_cat">Integrals</th>
-                <th class="gameboard_piece_cat">Green</th>
-                <th class="gameboard_piece_cat">Stokes</th>
-                <th class="gameboard_piece_cat">Surface</th>
-                <th class="gameboard_piece_cat">Random</th>
-            </tr>
-            <tr class="gameboard_row">
-                <th class="gameboard_piece"><a href="questions/Integrals-100.html">100</a></th>
-                <th class="gameboard_piece"><a href="100">100</a></th>
-                <th class="gameboard_piece"><a href="100">100</a></th>
-                <th class="gameboard_piece"><a href="100">100</a></th>
-                <th class="gameboard_piece"><a href="100">100</a></th>
-            </tr>
-            <tr class="gameboard_row">
-                <th class="gameboard_piece"><a href="200">200</a></th>
-                <th class="gameboard_piece"><a href="200">200</a></th>
-                <th class="gameboard_piece"><a href="200">200</a></th>
-                <th class="gameboard_piece"><a href="200">200</a></th>
-                <th class="gameboard_piece"><a href="200">200</a></th>
-            </tr>
-            <tr class="gameboard_row">
-                <th class="gameboard_piece"><a href="300">300</a></th>
-                <th class="gameboard_piece"><a href="300">300</a></th>
-                <th class="gameboard_piece"><a href="300">300</a></th>
-                <th class="gameboard_piece"><a href="300">300</a></th>
-                <th class="gameboard_piece"><a href="300">300</a></th>
-            </tr>
-            <tr class="gameboard_row">
-                <th class="gameboard_piece"><a href="400">400</a></th>
-                <th class="gameboard_piece"><a href="400">400</a></th>
-                <th class="gameboard_piece"><a href="400">400</a></th>
-                <th class="gameboard_piece"><a href="400">400</a></th>
-                <th class="gameboard_piece"><a href="400">400</a></th>
-            </tr>
-            <tr class="gameboard_row">
-                <th class="gameboard_piece"><a href="500">500</a></th>
-                <th class="gameboard_piece"><a href="500">500</a></th>
-                <th class="gameboard_piece"><a href="500">500</a></th>
-                <th class="gameboard_piece"><a href="500">500</a></th>
-                <th class="gameboard_piece"><a href="500">500</a></th>
-            </tr>
-        </table>
-
-        <span>
-        </span>
+        <div id="Green-100" style="display: none; z-index: 1;">
+            <table class="gameboard">
+                <tr class="question_title_row">
+                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_large" style="color: rgb(8, 236, 8);">GREEN 100</th>
+                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_mini"></th>
+                </tr>
+                <tr class="question_question_row">
+                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_large">URMOM LOL</th>
+                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_mini"></th>
+                </tr>
+                <tr class="question_done_row">
+                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_large"><a href="#" onclick="popdown('Green-100');">donee</a></th>
+                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_mini"></th>
+                </tr>
+            </table>
+                
+        </div>
+        <div style="z-index: -1">
+            <table class="gameboard">
+                <tr class="gameboard_title_row">
+                    <th class="gameboard_piece_sad"></th>
+                    <th class="gameboard_piece_sad"></th>
+                    <th class="gameboard_piece_sad">JEOPARDY</th>
+                    <th class="gameboard_piece_sad"></th>
+                    <th class="gameboard_piece_sad"></th>
+                </tr>
+                <tr class="gameboard_title_row">
+                    <th class="gameboard_piece_cat">Integrals</th>
+                    <th class="gameboard_piece_cat">Green</th>
+                    <th class="gameboard_piece_cat">Stokes</th>
+                    <th class="gameboard_piece_cat">Surface</th>
+                    <th class="gameboard_piece_cat">Random</th>
+                </tr>
+                <tr class="gameboard_row">
+                    <th class="gameboard_piece"><a href="questions/Integrals-100.html">100</a></th>
+                    <th class="gameboard_piece"><a href="#" onclick="popup('Green-100');">100</a></th>
+                    <th class="gameboard_piece"><a href="100">100</a></th>
+                    <th class="gameboard_piece"><a href="100">100</a></th>
+                    <th class="gameboard_piece"><a href="100">100</a></th>
+                </tr>
+                <tr class="gameboard_row">
+                    <th class="gameboard_piece"><a href="200">200</a></th>
+                    <th class="gameboard_piece"><a href="200">200</a></th>
+                    <th class="gameboard_piece"><a href="200">200</a></th>
+                    <th class="gameboard_piece"><a href="200">200</a></th>
+                    <th class="gameboard_piece"><a href="200">200</a></th>
+                </tr>
+                <tr class="gameboard_row">
+                    <th class="gameboard_piece"><a href="300">300</a></th>
+                    <th class="gameboard_piece"><a href="300">300</a></th>
+                    <th class="gameboard_piece"><a href="300">300</a></th>
+                    <th class="gameboard_piece"><a href="300">300</a></th>
+                    <th class="gameboard_piece"><a href="300">300</a></th>
+                </tr>
+                <tr class="gameboard_row">
+                    <th class="gameboard_piece"><a href="400">400</a></th>
+                    <th class="gameboard_piece"><a href="400">400</a></th>
+                    <th class="gameboard_piece"><a href="400">400</a></th>
+                    <th class="gameboard_piece"><a href="400">400</a></th>
+                    <th class="gameboard_piece"><a href="400">400</a></th>
+                </tr>
+                <tr class="gameboard_row">
+                    <th class="gameboard_piece"><a href="500">500</a></th>
+                    <th class="gameboard_piece"><a href="500">500</a></th>
+                    <th class="gameboard_piece"><a href="500">500</a></th>
+                    <th class="gameboard_piece"><a href="500">500</a></th>
+                    <th class="gameboard_piece"><a href="500">500</a></th>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>

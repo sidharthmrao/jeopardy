@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    position: absolute;
 }
 
 .title {
@@ -13,6 +14,7 @@ body {
     justify-content: center;
     width: 100%;
     font-size: 10vh;
+    display: flex;
 }
 
 .gameboard {
@@ -61,5 +63,41 @@ body {
     border-color: red;
     border-style: solid;
     color: red;
+    font-size: 8vh;
+}
+
+.question_title_row {
+    height: 20%;
+    border: .1vh;
+    border-color: red;
+    border-style: solid;
+    color: blue;
+}
+
+.question_question_row {
+    height: 60%;
+    border: .1vh;
+    border-color: red;
+    border-style: solid;
+    color: blue;
+}
+
+.question_done_row {
+    height: 20%;
+    border: .1vh;
+    border-color: red;
+    border-style: solid;
+    color: blue;
+}
+
+.gameboard_piece_mini {
+    width: 10%;
+    color: purple;
+    font-size: 8vh;
+}
+
+.gameboard_piece_large {
+    width: 60%;
+    color: purple;
     font-size: 8vh;
 }
