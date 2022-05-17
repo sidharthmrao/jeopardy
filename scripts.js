@@ -1,11 +1,11 @@
 // Useful for making the latex: https://www.tutorialspoint.com/latex_equation_editor.htm
 
 let questions = {
-    "INTEGRALS-100": ["Take the partial derivative of the following function.", "\\frac{\\partial}{\\partial x} x^{2}+z", "asdf"],
-    "INTEGRALS-200": ["", "", ""],
-    "INTEGRALS-300": ["", "", ""],
-    "INTEGRALS-400": ["", "", ""],
-    "INTEGRALS-500": ["", "", ""],
+    "INTEGRATIVES-100": ["Take the partial derivative of the following function.", "\\frac{\\partial}{\\partial x} x^{2}+z", "asdf"],
+    "INTEGRATIVES-200": ["", "", ""],
+    "INTEGRATIVES-300": ["", "", ""],
+    "INTEGRATIVES-400": ["", "", ""],
+    "INTEGRATIVES-500": ["", "", ""],
     "GREEN-100": ["What is the name of the green planet?", "c = \\pm\\sqrt{a^2 + b^2}", "asdfasdf"],
     "GREEN-200": ["", "", ""],
     "GREEN-300": ["", "", ""],
@@ -31,6 +31,14 @@ let questions = {
 
 
 function popup(which) {
+    document.body.classList.add("popup-open");
+    document.getElementById("overall_gameboard").classList.remove("overall_gameboard_div_off");
+    document.getElementById("overall_gameboard").classList.add("overall_gameboard_div_on");
+    setTimeout(function() {
+        document.body.classList.remove("popup-open");
+        document.getElementById("overall_gameboard").classList.remove("overall_gameboard_div_on");
+        document.getElementById("overall_gameboard").classList.add("overall_gameboard_div_off");
+    },1000);
     console.log(which);
     document.getElementById("popup").style.display = "flex";
     document.getElementById("question-category").innerHTML = which;

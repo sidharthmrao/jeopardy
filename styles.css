@@ -4,6 +4,30 @@ body {
     overflow: hidden;
 }
 
+@-webkit-keyframes roll {
+    from { -webkit-transform: rotate(180deg) }
+    to   { -webkit-transform: rotate(360deg) }
+}
+
+@-moz-keyframes roll {
+    from { -moz-transform: rotate(180deg) }
+    to   { -moz-transform: rotate(360deg) }
+}
+
+@keyframes roll {
+    from { transform: rotate(180deg) }
+    to   { transform: rotate(360deg) }
+}
+
+.popup-open {
+    -moz-animation-name: roll;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+}
+
 .title {
     color: purple;
     text-align: center;
@@ -109,4 +133,12 @@ body {
     width: 100%;
     color: purple;
     font-size: 8vh;
+}
+
+.overall_gameboard_div_off {
+    transform: rotate(0deg);
+}
+
+.overall_gameboard_div_on {
+    transform: rotate(-180deg);
 }
