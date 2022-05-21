@@ -10,7 +10,7 @@
         <script type="text/javascript" src="scripts.js"></script>
         <title>Jeopardy!</title>
     </head>
-    <body>
+    <body onload="start();">
         <div id="popup" style="display: none; z-index: 1;">
             <table class="gameboard">
                 <tr class="question_title_row">
@@ -49,53 +49,53 @@
         <div id = "overall_gameboard" style="z-index: -1;" class = "overall_gameboard_div_off">
             <table class="gameboard" style="border: none;">
                 <tr class="gameboard_title_row">
-                    <th class="gameboard_piece_sad"></th>
-                    <th class="gameboard_piece_sad"></th>
-                    <th class="gameboard_piece_sad">JEOPARDY</th>
-                    <th class="gameboard_piece_sad"></th>
-                    <th class="gameboard_piece_sad"></th>
+                    <th class="gameboard_piece_score" id="team1-score">TEAM 1: 9000</th>
+                    <th class="gameboard_piece_score"></th>
+                    <th class="gameboard_piece_title">JEOPARDY</th>
+                    <th class="gameboard_piece_score"></th>
+                    <th class="gameboard_piece_score" id="team2-score">TEAM 2: 9000</th>
                 </tr>
                 <tr class="gameboard_title_row">
                     <th class="gameboard_piece_cat">Integratives</th>
                     <th class="gameboard_piece_cat">Green</th>
                     <th class="gameboard_piece_cat">Stokes</th>
-                    <th class="gameboard_piece_cat">Surface</th>
+                    <th class="gameboard_piece_cat">Tripleint</th>
                     <th class="gameboard_piece_cat">Random</th>
                 </tr>
                 <tr class="gameboard_row">
-                    <th class="gameboard_piece"><a href="#" onclick="popup('INTEGRATIVES-100');">100</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('GREEN-100');">100</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('STOKES-100');">100</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('SURFACE-100');">100</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('RANDOM-100');">100</a></th>
+                    <th class="gameboard_piece"><a href="#1" onclick="popup('INTEGRATIVES-100');">100</a></th>
+                    <th class="gameboard_piece"><a href="#2" onclick="popup('GREEN-100');">100</a></th>
+                    <th class="gameboard_piece"><a href="#3" onclick="popup('STOKES-100');">100</a></th>
+                    <th class="gameboard_piece"><a href="#4" onclick="popup('TRIPLEINT-100');">100</a></th>
+                    <th class="gameboard_piece"><a href="#5" onclick="popup('RANDOM-100');">100</a></th>
                 </tr>
                 <tr class="gameboard_row">
-                    <th class="gameboard_piece"><a href="#" onclick="popup('INTEGRATIVES-200');">200</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('GREEN-200');">200</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('STOKES-200');">200</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('SURFACE-200');">200</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('RANDOM-200');">200</a></th>
+                    <th class="gameboard_piece"><a href="#6" onclick="popup('INTEGRATIVES-200');">200</a></th>
+                    <th class="gameboard_piece"><a href="#7" onclick="popup('GREEN-200');">200</a></th>
+                    <th class="gameboard_piece"><a href="#8" onclick="popup('STOKES-200');">200</a></th>
+                    <th class="gameboard_piece"><a href="#9" onclick="popup('TRIPLEINT-200');">200</a></th>
+                    <th class="gameboard_piece"><a href="#10" onclick="popup('RANDOM-200');">200</a></th>
                 </tr>
                 <tr class="gameboard_row">
-                    <th class="gameboard_piece"><a href="#" onclick="popup('INTEGRATIVES-300');">300</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('GREEN-300');">300</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('STOKES-300');">300</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('SURFACE-300');">300</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('RANDOM-300');">300</a></th>
+                    <th class="gameboard_piece"><a href="#11" onclick="popup('INTEGRATIVES-300');">300</a></th>
+                    <th class="gameboard_piece"><a href="#12" onclick="popup('GREEN-300');">300</a></th>
+                    <th class="gameboard_piece"><a href="#13" onclick="popup('STOKES-300');">300</a></th>
+                    <th class="gameboard_piece"><a href="#14" onclick="popup('TRIPLEINT-300');">300</a></th>
+                    <th class="gameboard_piece"><a href="#15" onclick="popup('RANDOM-300');">300</a></th>
                 </tr>
                 <tr class="gameboard_row">
-                    <th class="gameboard_piece"><a href="#" onclick="popup('INTEGRATIVES-400');">400</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('GREEN-400');">400</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('STOKES-400');">400</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('SURFACE-400');">400</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('RANDOM-400');">400</a></th>
+                    <th class="gameboard_piece"><a href="#16" onclick="popup('INTEGRATIVES-400');">400</a></th>
+                    <th class="gameboard_piece"><a href="#17" onclick="popup('GREEN-400');">400</a></th>
+                    <th class="gameboard_piece"><a href="#18" onclick="popup('STOKES-400');">400</a></th>
+                    <th class="gameboard_piece"><a href="#19" onclick="popup('TRIPLEINT-400');">400</a></th>
+                    <th class="gameboard_piece"><a href="#20" onclick="popup('RANDOM-400');">400</a></th>
                 </tr>
                 <tr class="gameboard_row">
-                    <th class="gameboard_piece"><a href="#" onclick="popup('INTEGRATIVES-500');">500</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('GREEN-500');">500</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('STOKES-500');">500</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('SURFACE-500');">500</a></th>
-                    <th class="gameboard_piece"><a href="#" onclick="popup('RANDOM-500');">500</a></th>
+                    <th class="gameboard_piece"><a href="#21" onclick="popup('INTEGRATIVES-500');">500</a></th>
+                    <th class="gameboard_piece"><a href="#22" onclick="popup('GREEN-500');">500</a></th>
+                    <th class="gameboard_piece"><a href="#23" onclick="popup('STOKES-500');">500</a></th>
+                    <th class="gameboard_piece"><a href="#24" onclick="popup('TRIPLEINT-500');">500</a></th>
+                    <th class="gameboard_piece"><a href="#25" onclick="popup('RANDOM-500');">500</a></th>
                 </tr>
             </table>
         </div>

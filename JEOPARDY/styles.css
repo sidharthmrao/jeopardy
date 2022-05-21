@@ -1,7 +1,7 @@
 body {
-    background-color: black;
     position: absolute;
     overflow: visible;
+    background-color: #141E30;
 }
 
 html {
@@ -101,6 +101,21 @@ html {
     width: 20%;
     color: purple;
     font-size: 8vh;
+}
+
+.gameboard_piece_title {
+    border: .5vh;
+    border-color: red;
+    border-style: solid;
+    width: 20%;
+    color: purple;
+    font-size: 8vh;
+}
+
+.gameboard_piece_score {
+    width: 20%;
+    color: blue;
+    font-size: 6vh;
 }
 
 .gameboard_piece_cat {
