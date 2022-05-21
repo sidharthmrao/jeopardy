@@ -75,10 +75,10 @@ function start() {
     const urlParams = new URLSearchParams(queryString);
     var teams = urlParams.get('teams');
 
-    if (teams >= 1) {valid.push(document.getElementById("team1-score")); document.getElementById("team1_button").innerHTML = "<a href='#'>Team 1</a>";}
-    if (teams >= 2) {valid.push(document.getElementById("team2-score")); document.getElementById("team2_button").innerHTML = "<a href='#'>Team 2</a>";}
-    if (teams >= 3) {valid.push(document.getElementById("team3-score")); document.getElementById("team3_button").innerHTML = "<a href='#'>Team 3</a>";}
-    if (teams >= 4) {valid.push(document.getElementById("team4-score")); document.getElementById("team4_button").innerHTML = "<a href='#'>Team 4</a>";}
+    if (teams >= 1) {valid.push(document.getElementById("team1-score")); document.getElementById("team1_button").innerHTML = "<a href='#'>TEAM 1</a>";}
+    if (teams >= 2) {valid.push(document.getElementById("team2-score")); document.getElementById("team2_button").innerHTML = "<a href='#'>TEAM 2</a>";}
+    if (teams >= 3) {valid.push(document.getElementById("team3-score")); document.getElementById("team3_button").innerHTML = "<a href='#'>TEAM 3</a>";}
+    if (teams >= 4) {valid.push(document.getElementById("team4-score")); document.getElementById("team4_button").innerHTML = "<a href='#'>TEAM 4</a>";}
 
     for (var i = 0; i < valid.length; i++) {
         valid[i].innerHTML = "TEAM "+(i+1).toString() + ": " + team_scores[i].toString();
