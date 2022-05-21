@@ -14,11 +14,11 @@
         <div id="popup" style="display: none; z-index: 1;">
             <table class="gameboard">
                 <tr class="question_title_row">
-                    <th class="gameboard_piece_mini"></th>
-                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_mini" id = "team1_button" onclick="addScore(1);"></th>
+                    <th class="gameboard_piece_mini" id = "team2_button" onclick="addScore(2);"></th>
                     <th class="gameboard_piece_large" style="color: rgb(8, 236, 8);"><a id="question-category" href = "#overall_gameboard" onclick="popdown();">TITLE</a></th>
-                    <th class="gameboard_piece_mini"></th>
-                    <th class="gameboard_piece_mini"></th>
+                    <th class="gameboard_piece_mini" id = "team3_button" onclick="addScore(3);"></th>
+                    <th class="gameboard_piece_mini" id = "team4_button" onclick="addScore(4);"></th>
                 </tr>
                 <tr class="question_question_row">
                     <th class="gameboard_piece_mini"></th>
@@ -49,11 +49,11 @@
         <div id = "overall_gameboard" style="z-index: -1;" class = "overall_gameboard_div_off">
             <table class="gameboard" style="border: none;">
                 <tr class="gameboard_title_row">
-                    <th class="gameboard_piece_score" id="team1-score">TEAM 1: 9000</th>
-                    <th class="gameboard_piece_score"></th>
+                    <th class="gameboard_piece_score" id="team1-score"></th>
+                    <th class="gameboard_piece_score" id="team2-score"></th>
                     <th class="gameboard_piece_title">JEOPARDY</th>
-                    <th class="gameboard_piece_score"></th>
-                    <th class="gameboard_piece_score" id="team2-score">TEAM 2: 9000</th>
+                    <th class="gameboard_piece_score" id="team3-score"></th>
+                    <th class="gameboard_piece_score" id="team4-score"></th>
                 </tr>
                 <tr class="gameboard_title_row">
                     <th class="gameboard_piece_cat">Integratives</th>

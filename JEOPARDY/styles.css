@@ -115,7 +115,7 @@ html {
 .gameboard_piece_score {
     width: 20%;
     color: blue;
-    font-size: 6vh;
+    font-size: 5vh;
 }
 
 .gameboard_piece_cat {
@@ -160,13 +160,13 @@ html {
 }
 
 .gameboard_piece_mini {
-    width: 0%;
+    width: 15%;
     color: purple;
-    font-size: 8vh;
+    font-size: 5vh;
 }
 
 .gameboard_piece_large {
-    width: 100%;
+    width: 40%;
     color: purple;
     font-size: 8vh;
 }
